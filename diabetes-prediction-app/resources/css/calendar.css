@@ -1,0 +1,68 @@
+.vuecal {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem; /* text-sm */
+    --vuecal-color-primary: #25786e; /* новий основний колір */
+    --vuecal-bg-color: #ffffff;
+    --vuecal-border-color: #25786e; /* колір рамок */
+    --vuecal-selected-bg: #25786e; /* активна клітинка */
+    --vuecal-hover-bg: #e0f2f1; /* м’який фон при наведенні */
+    --vuecal-text-color: #111827;
+    --vuecal-today-color: #ef4444;
+}
+
+/* Колір заголовку (місяць + стрілки) */
+.vuecal__title {
+    color: white !important;
+    background-color: #25786e !important;
+    padding: 0.5rem;
+}
+
+/* Рамка клітинок */
+.vuecal__cell {
+    border-radius: 0;
+    font-size: 0.75rem;
+    padding: 4px;
+}
+
+/* Виділена дата */
+.vuecal__cell--selected {
+    background-color: #25786e !important;
+    color: white;
+    font-weight: 600;
+}
+
+/* Наведення */
+.vuecal__cell--hover {
+    background-color: #e0f2f1;
+}
+
+.vuecal__arrow {
+    color: white !important;
+    background-color: #25786e !important;
+    border: 1px solid #25786e;
+    border-radius: 0.375rem; /* rounded-md */
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.vuecal__arrow:hover {
+    background-color: #1e6058 !important; /* трохи темніший при наведенні */
+}
+
+/* Вся панель заголовку: стрілки + назва місяця */
+.vuecal__title-bar {
+    background-color: #25786e !important;
+    color: white !important;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Сьогоднішня дата */
+.vuecal__cell--today {
+    background-color: rgba(37, 120, 110, 0.1) !important;
+    color: #065f46 !important;
+    font-weight: 600;
+}

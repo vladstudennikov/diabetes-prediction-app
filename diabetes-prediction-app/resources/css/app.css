@@ -1,0 +1,99 @@
+/* Fonts importing */
+@import "@fontsource/montserrat/latin-400.css";
+@import "@fontsource/montserrat/latin-700.css"; 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --top-menu-font: "Montserrat", system-ui, sans-serif;
+    --top-menu-visibility: flex;
+
+    --top-menu-font-size: 18px;
+    --top-menu-logo-width: 78px;
+    --top-menu-logo-height: 60px;
+
+    --top-menu-button-color: #25786e;
+    --top-menu-button-text-color: white;
+
+    --top-menu-option-padding: 0 15px;
+    --top-menu-button-padding: 5px 20px;
+
+    --top-menu-border-radius: 20px;
+    --top-menu-height: 75px;
+
+    --top-menu-options-gap: 10px;
+
+    --main-header-font: "Montserrat", system-ui, sans-serif;
+    --main-header-weight: 800;
+    --main-header-color: #25786e;
+    --main-image-button-color: #25786e;
+    --main-image-button-text-color: white;
+
+    --mobile-header-height: 60px;
+    --mobile-bg-color: #ffffff;
+    --mobile-text-color: black;
+    --mobile-menu-bg: #f8f8f8;
+    --hamburger-line-width: 24px;
+    --hamburger-line-height: 2px;
+    --hamburger-line-gap: 6px;
+    --menu-slide-duration: 0.3s;
+
+    --mobile-logo-width: 78px;
+    --mobile-logo-height: 60px;
+
+    --mobile-menu-option-font-size: 25px;
+    --mobile-menu-button-font-size: 25px;
+    --mobile-menu-option-margin-bottom: 10px;
+
+    --mobile-menu-option-text-align: center;
+
+    --card-title-color: #075a55;
+    --card-text-color: #333333;
+    --card-button-bg: #075a55;
+    --card-text-color: #333333;
+    --card-button-bg: #075a55;
+    --card-button-color: #25786e;
+    --card-button-color: white;
+
+    --footer-bg: #a3a3a3; /* background color */
+    --footer-font-family: "Montserrat", system-ui, sans-serif;
+    --footer-font-size: 16px;
+    --footer-text-color: #ffffff;
+    --footer-padding: 3rem;
+    --footer-spacing: 0.3rem;
+    --footer-author-weight: 600;
+    --footer-margin-top: 30px;
+
+    --primary-button-color: #075a55;
+
+    /* Setup for question pages */
+    --questions-font-family: "Montserrat", system-ui, sans-serif;
+    --font-small: 1rem;
+    --font-base: 1.1rem;
+    --font-large: 1.3rem;
+    --color-primary: #116B65;
+    --color-text: #123;
+    --color-button: #2F7D75;
+    --color-button-text: #fff;
+}
+
+/* 890px is the width of screen when items in top menu starts to overlap
+That`s why it`s needed to adjust style of top-menu elements at this point */
+@media screen and (max-width: 890px) {
+    :root {
+        --top-menu-font-size: 15px;
+        --top-menu-logo-width: 70px;
+        --top-menu-logo-height: 50px;
+        --top-menu-options-gap: 5px;
+    }
+}
+
+/* 760px is the size of screen when menu elements are already small and start 
+to overlay again, then menu should be hidden */
+@media screen and (max-width: 768px) {
+    :root {
+        --top-menu-visibility: none;
+    }
+}

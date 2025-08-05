@@ -1,0 +1,18 @@
+{
+  "1": "Age",
+  "2": "BMI",
+  "3": "CholCheck",
+  "4": "DiffWalk",
+  "5": "Fruits",
+  "6": "GenHlth",
+  "7": "HeartDiseaseorAttack",
+  "8": "HighBP",
+  "9": "HighChol",
+  "10": "HvyAlcoholConsump",
+  "11": "MentHlth",
+  "12": "NoDocbcCost",
+  "13": "PhysActivity",
+  "14": "PhysHlth",
+  "15": "Smoker",
+  "16": "Stroke"
+}
